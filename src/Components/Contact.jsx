@@ -14,8 +14,8 @@ const ContactMe = () => {
             Let’s connect and discuss your ideas, projects, or opportunities. Fill out the form and I’ll get back to you as soon as possible.
           </p>
           <ul className="space-y-2 text-gray-400">
-            <li><strong>Email:</strong> baljeet@example.com</li>
-            <li><strong>Phone:</strong> +91 98765 43210</li>
+            <li><strong>Email:</strong> Baljeetsaini7440@gmail.com</li>
+            <li><strong>Phone:</strong> +91 97280 67440</li>
             <li><strong>Location:</strong> Chandigarh, India</li>
           </ul>
         </div>
