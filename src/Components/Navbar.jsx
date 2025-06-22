@@ -1,9 +1,11 @@
-
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+  console.log("Current path:", location.pathname);
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -15,17 +17,58 @@ const Navbar = () => {
 
         {/* Center: Menu (Desktop only) */}
         <ul className="hidden md:flex gap-8 text-white font-medium">
-          <li><a href="#home" className="hover:text-yellow-400 ">Home</a></li>
-          <li><a href="#about" className="hover:text-yellow-400">About Me</a></li>
-          <li><a href="#skills" className="hover:text-yellow-400">Skills</a></li>
-          <li><a href="#projects" className="hover:text-yellow-400">Projects</a></li>
+          <li>
+            <Link
+              to="/"
+              state={{ scrollTo: "home" }}
+              className="hover:text-yellow-400"
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/"
+              state={{ scrollTo: "about" }}
+              className="hover:text-yellow-400"
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/"
+              state={{ scrollTo: "skills" }}
+              className="hover:text-yellow-400"
+            >
+              Skills
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/"
+              state={{ scrollTo: "projects" }}
+              className="hover:text-yellow-400"
+            >
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/services"
+              target="_blank"
+              className="hover:text-yellow-400"
+            >
+              Services
+            </Link>
+          </li>
         </ul>
 
         {/* Right: Let's Talk + Hamburger (mobile) */}
         <div className="flex items-center gap-4">
           <a
             href="#contact"
-            className="hidden sm:inline-block bg-yellow-400 text-black px-4 py-2 rounded-md font-semibold hover:bg-yellow-300 transition"
+            className="sm:inline-block bg-yellow-400 text-black px-4 py-2 rounded-md font-semibold hover:bg-yellow-300 transition"
           >
             Let's Talk
           </a>
@@ -45,10 +88,56 @@ const Navbar = () => {
         }`}
       >
         <ul className="flex flex-col items-center space-y-6 text-lg text-white">
-          <li><a onClick={toggleMenu} href="#home" className="hover:text-yellow-400">Home</a></li>
-          <li><a onClick={toggleMenu} href="#about" className="hover:text-yellow-400">About Me</a></li>
-          <li><a onClick={toggleMenu} href="#skills" className="hover:text-yellow-400">Skills</a></li>
-          <li><a onClick={toggleMenu} href="#projects" className="hover:text-yellow-400">Projects</a></li>         
+          <li>
+            <Link
+              onClick={toggleMenu}
+              to="/"
+              state={{ scrollTo: "home" }}
+              className="hover:text-yellow-400"
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={toggleMenu}
+              to="/"
+              state={{ scrollTo: "about" }}
+              className="hover:text-yellow-400"
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={toggleMenu}
+              to="/"
+              state={{ scrollTo: "skills" }}
+              className="hover:text-yellow-400"
+            >
+              Skills
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={toggleMenu}
+              to="/"
+              state={{ scrollTo: "projects" }}
+              className="hover:text-yellow-400"
+            >
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={toggleMenu}
+              to="/services"
+              target="_blank"
+              className="hover:text-yellow-400"
+            >
+              Services
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>
@@ -56,4 +145,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

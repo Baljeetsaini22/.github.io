@@ -1,30 +1,24 @@
-import Navbar from "./Components/Navbar"
-import Hero from "./Components/Hero"
-import About from "./Components/About"
-import Skills from "./Components/Skill"
-import Education from "./Components/Education"
-import Certifications from "./Components/Certification"
-import ContactMe from "./Components/Contact"
-import Projects from "./Components/Project"
-import Footer from "./Components/footer"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
+import Home from "./Components/pages/Home";
+import Services from "./Components/pages/Service";
 
 function App() {
-
-
   return (
-    <>
-    <Navbar />
-    <Hero />
-    <About />
-    <Skills />
-    <Education />
-    <Certifications />
-    <Projects />
-    <ContactMe />
-    <Footer />
-    </>
-  )
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+        {/* Future routes:
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} /> */}
+      </Routes>
+      <Footer />
+    </Router>
+  );
 }
 
-export default App
+export default App;

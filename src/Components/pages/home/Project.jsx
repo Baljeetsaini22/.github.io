@@ -47,13 +47,13 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="w-full p-[7.5%] bg-black text-white py-16 px-6 md:px-12">
+    <section id="projects" className="w-full h-auto px-[7.5%] py-16">
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-yellow-400">My Projects</h2>
         <p className="mt-4 text-gray-300">Click on a project to view it live</p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {projects.map((project) => (
           <div
             key={project.id}

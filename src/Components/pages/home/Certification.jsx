@@ -18,13 +18,13 @@ const certifications = [
 
 const Certifications = () => {
   return (
-    <section id="certifications" className="w-full p-[7.5%] bg-black text-white py-16 px-6 md:px-12">
+    <section id="certifications" className="w-full h-auto px-[7.5%] py-16">
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-yellow-400">Certifications</h2>
         <p className="mt-4 text-gray-300">Courses and Certifications I have completed</p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2  gap-20 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2  gap-20">
         {certifications.map((cert) => (
           <div
             key={cert.id}

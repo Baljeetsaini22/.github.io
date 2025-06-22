@@ -28,7 +28,7 @@ const Education = () => {
   return (
     <section
       id="education"
-      className="w-full p-[7.5%] bg-black text-white py-16 px-6 md:px-12 relative overflow-hidden"
+      className="w-full h-auto px-[7.5%] py-16 relative overflow-hidden"
     >
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-yellow-400">
@@ -42,7 +42,7 @@ const Education = () => {
       {/* Timeline Line (hidden on mobile, soft in background) */}
       <div className="hidden md:block absolute top-0 left-1/2 transform -translate-x-1/2 w-1 h-full bg-yellow-500 opacity-10 z-0"></div>
 
-      <div className="relative max-w-6xl mx-auto z-10">
+      <div className="relative z-10">
         {educationData.map((edu) => (
           <div
             key={edu.id}

@@ -2,8 +2,8 @@ import React from "react";
 
 const ContactMe = () => {
   return (
-    <section id="meeting" className="bg-black text-white py-16 px-6 md:px-12">
-      <div className="mw-full p-[7.5%] grid md:grid-cols-2 gap-12 items-center">
+    <section id="meeting" className="w-full h-auto px-[7.5%] py-16">
+      <div className="grid md:grid-cols-2 gap-12 items-center">
         
         {/* Left Side Info */}
         <div>

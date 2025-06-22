@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa";
+import { Link, useLocation } from "react-router-dom";
 
 const Footer = () => {
+  const location = useLocation();
+  console.log("Current path:", location.pathname);
+
   const [showTopBtn, setShowTopBtn] = useState(false);
   useEffect(() => {
     const handleScroll = () => setShowTopBtn(window.scrollY > 100);
@@ -12,7 +16,7 @@ const Footer = () => {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
-    <footer className="bg-black text-white pt-16 pb-8 px-6 md:px-12 relative">
+    <footer className="bg-black text-white w-full h-auto px-[7.5%] py-16 mt-18relative">
       {showTopBtn && (
         <button
           onClick={scrollToTop}
@@ -24,7 +28,7 @@ const Footer = () => {
       )}
 
       {/* Footer Content */}
-      <div className="w-full p-[7.5%] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         {/* Logo */}
         <div>
           <h2 className="text-2xl font-bold text-yellow-400">BS</h2>
@@ -36,24 +40,49 @@ const Footer = () => {
           <h3 className="text-xl font-semibold text-yellow-400 mb-2">Menu</h3>
           <ul className="space-y-2">
             <li>
-              <a href="#home" className="hover:text-yellow-400">
+              <Link
+                to="/"
+                state={{ scrollTo: "home" }}
+                className="hover:text-yellow-400"
+              >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#about" className="hover:text-yellow-400">
+              <Link
+                to="/"
+                state={{ scrollTo: "about" }}
+                className="hover:text-yellow-400"
+              >
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#projects" className="hover:text-yellow-400">
+              <Link
+                to="/"
+                state={{ scrollTo: "skills" }}
+                className="hover:text-yellow-400"
+              >
+                Skills
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/"
+                state={{ scrollTo: "projects" }}
+                className="hover:text-yellow-400"
+              >
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#contact" className="hover:text-yellow-400">
-                Contact
-              </a>
+              <Link
+                to="/services"
+                target="_blank"
+                className="hover:text-yellow-400"
+              >
+                Services
+              </Link>
             </li>
           </ul>
         </div>
@@ -72,7 +101,7 @@ const Footer = () => {
         </div>
 
         {/* Contact Form */}
-        <div>
+        <div id="contact">
           <h3 className="text-xl font-semibold text-yellow-400 mb-2">
             Contact
           </h3>

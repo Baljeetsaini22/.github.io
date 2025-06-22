@@ -1,10 +1,10 @@
 import React from "react";
-import myImg from "/image/myimg.jpg";
+import myImg from "/assets/image/myimg.jpg";
 
 const About = () => {
   return (
-    <section id="about" className="bg-black text-white py-16 px-6 md:px-12">
-      <div className="w-full p-[7.5%] grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <section id="about" className="w-full h-auto px-[7.5%] py-16">
+      <div className=" grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div>
           <h2 className="text-3xl md:text-4xl font-bold text-yellow-400 mb-6">
