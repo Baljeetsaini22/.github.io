@@ -10,7 +10,7 @@ const certifications = [
   {
     id: 2,
     title: "Computer Application",
-    issuer: "Hartron Skill Center, Kaitha",
+    issuer: "Hartron Skill Center, Kaithal",
     year: "2019",
   },
   

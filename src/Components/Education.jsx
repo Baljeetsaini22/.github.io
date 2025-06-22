@@ -17,7 +17,7 @@ const educationData = [
   },
   {
     id: 3,
-    title: "Computer Operator & Programming Assistent",
+    title: "Computer Operator & Programming Assistant",
     year: "2017 - 2018",
     institute: "ITI - NCVT",
     side: "left",
