@@ -47,7 +47,7 @@ const Navbar = () => {
         <ul className="flex flex-col items-center space-y-6 text-lg text-white">
           <li><a onClick={toggleMenu} href="#home" className="hover:text-yellow-400">Home</a></li>
           <li><a onClick={toggleMenu} href="#about" className="hover:text-yellow-400">About Me</a></li>
-          <li><a onClick={toggleMenu} href="#services" className="hover:text-yellow-400">Services</a></li>
+          <li><a onClick={toggleMenu} href="#skills" className="hover:text-yellow-400">Skills</a></li>
           <li><a onClick={toggleMenu} href="#projects" className="hover:text-yellow-400">Projects</a></li>         
         </ul>
       </div>
