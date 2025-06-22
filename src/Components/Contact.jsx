@@ -16,7 +16,7 @@ const ContactMe = () => {
           <ul className="space-y-2 text-gray-400">
             <li><strong>Email:</strong> Baljeetsaini7440@gmail.com</li>
             <li><strong>Phone:</strong> +91 97280 67440</li>
-            <li><strong>Location:</strong> Chandigarh, India</li>
+            <li><strong>Location:</strong> Zirakpur, Mohali, India</li>
           </ul>
         </div>
 
