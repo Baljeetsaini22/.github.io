@@ -1,4 +1,5 @@
-import React from "react";
+const AboutService = () => {
+
 
 const services = [
   {
@@ -45,7 +46,6 @@ const services = [
   },
 ];
 
-const About = () => {
   return (
     <section className="w-full h-auto px-[7.5%] py-16">
       <div className=" text-center mb-12">
@@ -82,4 +82,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutService;

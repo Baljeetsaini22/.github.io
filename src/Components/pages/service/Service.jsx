@@ -1,7 +1,8 @@
 import { useLocation } from "react-router-dom";
-import About from "./service/ServiceAbout";
-import Banner from "./service/ServiceBanner";
 import { useEffect } from "react";
+import Banner from "./ServiceBanner";
+import AboutService from "./ServiceAbout";
+
 
 const Services = () => {
   const location = useLocation();
@@ -18,7 +19,7 @@ const Services = () => {
   return (
     <div className="bg-black text-white">
       <Banner />
-      <About />
+      <AboutService />
     </div>
   );
 };
