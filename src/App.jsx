@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import Navbar from "./components/Navbar";
+import Navbar from "./Components/Navbar";
 import Home from "./Components/pages/Home";
 import Services from "./Components/pages/Service";
 // import Footer from "./components/Footer";
@@ -7,7 +7,7 @@ import Services from "./Components/pages/Service";
 function App() {
   return (
     <Router>
-      {/* <Navbar /> */}
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />

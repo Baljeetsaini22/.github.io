@@ -26,7 +26,7 @@ const Navbar = () => {
               Home
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               to="/"
               state={{ scrollTo: "about" }}
@@ -61,7 +61,7 @@ const Navbar = () => {
             >
               Services
             </Link>
-          </li>
+          </li> */}
         </ul>
 
         {/* Right: Let's Talk + Hamburger (mobile) */}
@@ -87,7 +87,7 @@ const Navbar = () => {
           isOpen ? "max-h-[400px] py-6" : "max-h-0"
         }`}
       >
-        <ul className="flex flex-col items-center space-y-6 text-lg text-white">
+        {/* <ul className="flex flex-col items-center space-y-6 text-lg text-white">
           <li>
             <Link
               onClick={toggleMenu}
@@ -138,7 +138,7 @@ const Navbar = () => {
               Services
             </Link>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </nav>
   );
