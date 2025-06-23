@@ -13,7 +13,6 @@ import { Link, useLocation } from "react-router-dom";
 
 const Hero = () => {
   const location = useLocation();
-  console.log(location);
 
   const [text] = useTypewriter({
     words: ["Baljeet Singh", "Frontend Web Developer"],
