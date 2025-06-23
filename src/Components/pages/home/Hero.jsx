@@ -9,10 +9,10 @@ import {
 import { FiArrowRight } from "react-icons/fi";
 import myimg from "/assets/image/myimg.jpg";
 import Resume from "/assets/resume/Resume.pdf";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
-  const location = useLocation();
+  
 
   const [text] = useTypewriter({
     words: ["Baljeet Singh", "Frontend Web Developer"],

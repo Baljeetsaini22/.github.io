@@ -56,7 +56,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/services"
-              target="_blank"
+              state={{ scrollTo: "services" }}
               className="hover:text-yellow-400"
             >
               Services
@@ -132,7 +132,6 @@ const Navbar = () => {
             <Link
               onClick={toggleMenu}
               to="/services"
-              target="_blank"
               className="hover:text-yellow-400"
             >
               Services

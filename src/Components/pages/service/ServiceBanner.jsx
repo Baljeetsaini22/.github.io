@@ -1,12 +1,10 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
-  const location = useLocation();
-  console.log(location);
   
   return (
-    <section className="w-full h-auto px-[7.5%] py-16 mt-18">
+    <section id="services" className="w-full h-auto px-[7.5%] py-16 mt-18">
       <div className="text-center">
         <h1 className="text-4xl md:text-5xl font-bold text-yellow-400">
           My Services
