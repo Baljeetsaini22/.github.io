@@ -26,7 +26,7 @@ const Navbar = () => {
               Home
             </Link>
           </li>
-          {/* <li>
+          <li>
             <Link
               to="/"
               state={{ scrollTo: "about" }}
@@ -61,7 +61,7 @@ const Navbar = () => {
             >
               Services
             </Link>
-          </li> */}
+          </li>
         </ul>
 
         {/* Right: Let's Talk + Hamburger (mobile) */}
