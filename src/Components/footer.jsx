@@ -48,7 +48,7 @@ const Footer = () => {
                 Home
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to="/"
                 state={{ scrollTo: "about" }}
@@ -83,7 +83,7 @@ const Footer = () => {
               >
                 Services
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
 
