@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Footer = () => {
   const location = useLocation();
-  console.log("Current path:", location.pathname);
+  console.log(location);
 
   const [showTopBtn, setShowTopBtn] = useState(false);
   useEffect(() => {
