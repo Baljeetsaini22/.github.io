@@ -62,37 +62,41 @@ const Hero = () => {
 
           {/* Social Icons */}
           <div className="flex gap-5 mt-4 text-2xl text-yellow-400">
-            <a
-              href="https://www.linkedin.com/in/baljeet-singh-13590834b/"
+            <Link
+              to="https://www.linkedin.com/in/baljeet-singh-13590834b/"
               target="_blank"
               rel="noreferrer"
             >
               <FaLinkedin />
-            </a>
-            <a
-              href="https://github.com/Baljeetsaini22"
+            </Link>
+            <Link
+              to="https://github.com/Baljeetsaini22"
               target="_blank"
               rel="noreferrer"
             >
               <FaGithub />
-            </a>
-            <a
-              href="https://www.instagram.com/_baljeet.0"
+            </Link>
+            <Link
+              to="https://www.instagram.com/_baljeet.0"
               target="_blank"
               rel="noreferrer"
             >
               <FaInstagram />
-            </a>
-            <a
-              href="https://www.facebook.com/profile.php?id=100090123884874"
+            </Link>
+            <Link
+              to="https://www.facebook.com/profile.php?id=100090123884874"
               target="_blank"
               rel="noreferrer"
             >
               <FaFacebook />
-            </a>
-            <a href="https://x.com/_Baljeet_0" target="_blank" rel="noreferrer">
+            </Link>
+            <Link
+              to="https://x.com/_Baljeet_0"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaTwitter />
-            </a>
+            </Link>
           </div>
         </div>
 

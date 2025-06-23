@@ -1,34 +1,34 @@
-import React from "react";
+
 
 const projects = [
   {
     id: 1,
     title: "E-Commerce Store",
-    image: "/projects/Ecommerce.png",
+    image: "/assets/projects/Ecommerce.png",
     link: "https://ecommerce-dda.vercel.app/",
   },
   {
     id: 2,
     title: "Sonata-Soft",
-    image: "/projects/sonatasoft.png",
+    image: "/assets/projects/sonatasoft.png",
     link: "https://baljeetsaini22.github.io/Sonata-Soft/",
   },
   {
     id: 3,
     title: "Restaurant Website",
-    image: "/projects/hrestaurant.png",
+    image: "/assets/projects/hrestaurant.png",
     link: "https://hariom-restaurant.vercel.app",
   },
   {
     id: 4,
     title: "Portfolio",
-    image: "/projects/sportfolio.png",
+    image: "/assets/projects/sportfolio.png",
     link: "https://simrank-porfolio.vercel.app/",
   },
   {
     id: 5,
     title: "Tic-Tac-Toy-Game",
-    image: "/projects/Game.png",
+    image: "/assets/projects/Game.png",
     link: "https://baljeetsaini22.github.io/Tic-tac-toe-Game/",
   },
   {
@@ -40,8 +40,8 @@ const projects = [
   {
     id: 7,
     title: "Desserts App",
-    image: "/projects/Desserts.png",
-    link: "https://baljeetsaini22.github.io/Desserts/",    
+    image: "/assets/projects/Desserts.png",
+    link: "https://baljeetsaini22.github.io/Desserts/",
   },
 ];
 

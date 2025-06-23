@@ -16,7 +16,7 @@ const Home = () => {
       const target = document.getElementById(location.state.scrollTo);
       target?.scrollIntoView({ behavior: "smooth" });
 
-      // clear scroll state from history
+      // clear the scroll state from history
       window.history.replaceState({}, document.title);
     }
   }, [location]);
