@@ -1,9 +1,8 @@
 import { BrowserRouter as Router } from "react-router-dom";
 
-
-import Main from "./components/Main";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import Main from "./components/Main";
 
 function App() {
   return (
