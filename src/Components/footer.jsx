@@ -38,7 +38,7 @@ const Footer = () => {
         {/* Menu Links */}
         <div>
           <h3 className="text-xl font-semibold text-yellow-400 mb-2">Menu</h3>
-          <ul className="space-y-2">
+          {/* <ul className="space-y-2">
             <li>
               <Link
                 to="/"
@@ -84,7 +84,7 @@ const Footer = () => {
                 Services
               </Link>
             </li>
-          </ul>
+          </ul> */}
         </div>
 
         {/* Services */}
