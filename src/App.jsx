@@ -1,17 +1,13 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router} from "react-router-dom";
 import Navbar from "./Components/Navbar";
-import Home from "./Components/pages/Home";
-import Services from "./components/pages/Service";
 import Footer from "./components/Footer";
+import Main from "./components/Main";
 
 function App() {
   return (
     <Router>      
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/services" element={<Services />} />
-      </Routes>
+      <Main />    
       <Footer />
     </Router>
   );
