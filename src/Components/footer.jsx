@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Footer = () => {
   const location = useLocation();
-  console.log(location);
+  
 
   const [showTopBtn, setShowTopBtn] = useState(false);
   useEffect(() => {
@@ -27,18 +27,18 @@ const Footer = () => {
         </button>
       )}
 
-      {/* Footer Content */}
+      
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-        {/* Logo */}
+       
         <div>
           <h2 className="text-2xl font-bold text-yellow-400">BS</h2>
           <p className="mt-2 text-gray-400">Frontend Developer Portfolio</p>
         </div>
 
-        {/* Menu Links */}
+       
         <div>
           <h3 className="text-xl font-semibold text-yellow-400 mb-2">Menu</h3>
-          {/* <ul className="space-y-2">
+          <ul className="space-y-2">
             <li>
               <Link
                 to="/"
@@ -84,10 +84,9 @@ const Footer = () => {
                 Services
               </Link>
             </li>
-          </ul> */}
+          </ul>
         </div>
 
-        {/* Services */}
         <div>
           <h3 className="text-xl font-semibold text-yellow-400 mb-2">
             Services
@@ -100,7 +99,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Contact Form */}
         <div id="contact">
           <h3 className="text-xl font-semibold text-yellow-400 mb-2">
             Contact
@@ -131,7 +129,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Copyright */}
       <div className="mt-12 text-center text-sm text-gray-500 border-t border-gray-700 pt-4">
         &copy; {new Date().getFullYear()} Baljeet Singh. All Rights Reserved.
       </div>
